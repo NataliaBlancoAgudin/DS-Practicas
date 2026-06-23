@@ -1,0 +1,22 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>20</zoom_level><element><id>UMLClass</id><coordinates><x>780</x><y>440</y><w>420</w><h>320</h></coordinates><panel_attributes>Encuesta
+--
+- pregunta : String
+- si : int
+- no : int
+--
++ incrementarSi() : void
++ incrementarNo() : void
+- actualizaGráficoCircular() : void
+- actualizaGráficoBarras() : void
+- hacerBackup() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>260</y><w>420</w><h>140</h></coordinates><panel_attributes>TextUserInterface
+--
+
+--
+rellena(encuesta : Encuesta) : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>280</y><w>440</w><h>200</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>10;20;200;20;200;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>520</y><w>420</w><h>140</h></coordinates><panel_attributes>main.main.Main
+--
+
+--
+_main(args : String[]) : void_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>560</y><w>220</w><h>80</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>380</y><w>60</w><h>180</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element></diagram>

@@ -1,0 +1,61 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>650</x><y>500</y><w>160</w><h>90</h></coordinates><panel_attributes>Foto
+--
+- usuario : String
+- descripcion : String
+--
++ descargar() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>650</x><y>600</y><w>160</w><h>90</h></coordinates><panel_attributes>Monumento
+--
+- nombre : String
+- autor : String
+- dirección : String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>650</x><y>400</y><w>160</w><h>90</h></coordinates><panel_attributes>Restaurante
+--
+- nombre : String
+- dirección : String
+- teléfono : String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>240</y><w>310</w><h>110</h></coordinates><panel_attributes>Navegador
+--
+
+--
++ getCoordenadas(dirección: String) : Coordenadas
++ getDirección(coordenadas : Coordenadas) : String
++ navegarHasta(dirección : String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>490</y><w>220</w><h>90</h></coordinates><panel_attributes>Marcador
+&lt;&lt;interface&gt;&gt;
+--
++ getCoordenadas() : Coordenadas
++ getTooltipInfo() : String
++ abrir() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>240</y><w>310</w><h>110</h></coordinates><panel_attributes>Mapa
+--
+
+--
++ dibujar() : void
++ pulsaciónCorta(x : int, y : int) : void
++ pulsaciónLarga(x : int, y : int) : void
++ buscarMarcador(x : int, y : int) : Marcador</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>960</x><y>590</y><w>340</w><h>110</h></coordinates><panel_attributes>MiniFormulario
+--
+- consola : BufferedReader
+--
++ editar() : void
+- imprimeMonumento(monumento : Monumento) : void
+- getLinea() : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>100</y><w>310</w><h>110</h></coordinates><panel_attributes>Database
+--
+
+--
++ selectMonumentos() : Collection&lt;Monumento&gt;
++ selectFotos() : Collection&lt;Foto&gt;
++ selectRestaurantes() : Collection&lt;Restaurante&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>100</y><w>210</w><h>70</h></coordinates><panel_attributes>main.main.Main
+--
+
+--
+_+ main(args : String[]) : void_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>960</x><y>290</y><w>210</w><h>70</h></coordinates><panel_attributes>main.main.Main
+--
+
+--
+_+ main(args : String[]) : void_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1050</x><y>350</y><w>30</w><h>260</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;240;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>130</y><w>390</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>370;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>160</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>340</y><w>40</w><h>170</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=n</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>200</y><w>50</w><h>460</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;440;30;440;30;10</additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>530</y><w>50</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;30;10</additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>440</y><w>50</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;30;10</additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>200</y><w>140</w><h>420</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;not implemented&gt;&gt;</panel_attributes><additional_attributes>10;10;10;400;100;400</additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>660</y><w>180</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;160;10</additional_attributes></element></diagram>

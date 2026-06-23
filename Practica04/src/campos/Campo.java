@@ -1,0 +1,6 @@
+package campos;
+
+public interface Campo {
+	public void pideDato();
+	public String getDato();
+}

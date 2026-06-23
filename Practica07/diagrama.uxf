@@ -1,0 +1,12 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>17</zoom_level><element><id>UMLClass</id><coordinates><x>238</x><y>357</y><w>357</w><h>153</h></coordinates><panel_attributes>main.main.Main
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>714</x><y>357</y><w>510</w><h>187</h></coordinates><panel_attributes>FileSystem
+--
+
+--
++copyFile (name : String, newName : String) : void
++sendToInternet(name : String, url : String) : void
++sendWithBluetooth(name : String, device : String) : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>578</x><y>408</y><w>170</w><h>68</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>10;20;80;20</additional_attributes></element></diagram>

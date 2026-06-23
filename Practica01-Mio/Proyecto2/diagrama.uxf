@@ -1,0 +1,20 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>7</zoom_level><element><id>UMLClass</id><coordinates><x>483</x><y>203</y><w>84</w><h>56</h></coordinates><panel_attributes>Pelicula
+--
+- titulo : String
+- categoria : int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>35</x><y>203</y><w>119</w><h>56</h></coordinates><panel_attributes>Cliente
+--
+- nombre : String
+--
++ imprimeInforme() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>266</x><y>203</y><w>91</w><h>56</h></coordinates><panel_attributes>Alquiler
+--
+- dias : int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>147</x><y>217</y><w>133</w><h>35</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=n
+</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>217</y><w>147</w><h>35</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>10;20;190;20</additional_attributes></element></diagram>
