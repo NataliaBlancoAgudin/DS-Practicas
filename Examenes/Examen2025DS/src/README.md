@@ -1,6 +1,7 @@
-# Enunciado Examen 2025
+# Enunciado Examen 2025 ENERO
 > **OJO:** Se recuerda que para realizar este examen se ha partido del código inicial del examen real pero con un 
-> enunciado que ha generado Gemini
+> enunciado que ha generado Gemini. En este caso se partió del código real del examen: está en la carpeta comprimida 
+> ``Enero2025-inicial.zip``
 ---
 
 Se desea desarrollar una aplicación de escritorio mediante interfaz gráfica (Swing) que actúe como un visor de 

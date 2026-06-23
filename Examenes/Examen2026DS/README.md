@@ -1,6 +1,7 @@
 # Enunciado Examen 2026 Ordinaria
-> **OJO:** Se recuerda que para realizar este examen se ha partido de un examen resuelto y se le pasó a gemini para que pudiera 
-> hacer un enunciado lo más parecido al examen real.
+> **OJO:** Se recuerda que para realizar este examen se ha partido de un examen resuelto y se le pasó a gemini para que 
+> pudiera hacer un enunciado lo más parecido al examen real. El código del que se partió está en la carpeta comprimida 
+> ``Examen2026-Ordinaria-Gemini.zip``
 ---
 
 Se desea desarrollar un editor de texto interactivo por consola que opere sobre un documento en memoria (Document). 
