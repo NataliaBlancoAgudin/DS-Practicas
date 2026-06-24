@@ -8,6 +8,9 @@ El código entregado ya funciona, pero hay que tratar de mejorar el diseño.
 
 ---
 ## Solución
+
+> **Patrón Command**
+
 Podemos observar que este proyecto tiene toda la funcionalidad en la clase `main.main.Main`. Esto supone un mal diseño porque si 
 en un futuro queremos cambiar alguna instrucción, o añadir  alguna, deberemos de modificar esta clase (no cumple el 
 principio de Abierto/Cerrado ni el de Responsabilidad Única):
@@ -15,7 +18,7 @@ principio de Abierto/Cerrado ni el de Responsabilidad Única):
 <summary>Código main.main.Main</summary>
 
 ```java
-public class main.main.Main {
+public class Main {
     private static List<String[]> instrucciones = new ArrayList<String[]>();
     private static int ip = 0;
 
@@ -219,7 +222,7 @@ Y el main.main.Main nos quedará muchisimo más limpio:
 <summary>Código main.main.Main</summary>
 
 ```java
-public class main.main.Main {
+public class Main {
 
     public static void main(String[] args) throws Exception {
         Programa.Programa programa = new Programa.Programa("files/factorial.txt");

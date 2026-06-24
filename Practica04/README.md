@@ -24,6 +24,8 @@ Al igual que en la clase anterior, en está sesión también tenéis el diagrama
 
 ---
 ## ✨ Solución
+> **Patrón Composite**
+
 Si nos fijamos en las clases ``campos.CampoNumero``, `campos.CampoPredefinido` y `campos.CampoTexto` podemos observar que todas ellas hacen 
 siempre lo mismo:
 1. Inicalizan un BufferedReader
@@ -337,7 +339,7 @@ public class CampoAnd implements Validable{
 
 Y así ya podemos crear el codigo postal:
 ```java
-public class main.main.Main {
+public class Main {
 
     public static void main(String[] args) {
         Formulario formulario = new Formulario();

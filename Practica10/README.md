@@ -6,3 +6,7 @@ Se deben identificar todos los problemas de la solución actual y mejorar el dis
 
 Este es el diagráma UML del código inicial:
 ![Diagrama UML](diagrama.png)
+
+---
+## ✨ Solución
+> **Patrón Factory Method**

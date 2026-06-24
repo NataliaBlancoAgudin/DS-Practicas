@@ -1,4 +1,4 @@
-# Sesión 3. editor.Editor
+# Sesión 5. Editor II
 
 En esta práctica vamos a trabajar con un editor de figuras en línea de ordenes. El editor podrá tener 3 tipos de figuras:
 - **Cuadrados**
@@ -28,6 +28,8 @@ Además, en esta práctica tenéis el diagrama UML del código inicial por si es
 
 ---
 ## ✨ Búsqueda de la Solución
+> **Patrón Command**
+
 Vamos a ir repasando todas las clases que tenemos hasta ahora:
 
 <details>
@@ -35,7 +37,7 @@ Vamos a ir repasando todas las clases que tenemos hasta ahora:
 Clase principal con la creación de un `editor.Editor` y la puesta en marcha del mismo
 
 ```java
-public class main.main.Main {
+public class Main {
 
   public static void main(String[] args) throws IOException {
     editor.Editor editor = new editor.Editor();
@@ -51,9 +53,9 @@ Clase que contiene todas las responsabilidades (excepto las del Dibujo): comando
 Esta clase es la que deberemos de completar antes de poder refactorizar el código.
 
 ```java
-public class editor.Editor {
+public class Editor {
 
-  public editor.Editor() {
+  public Editor() {
     setDibujo(new Dibujo());
   }
 
@@ -265,7 +267,7 @@ Lo primero que haremos será la funcionalidad de crear las figuras
 Para conseguir diferenciar si estamos creando un cuadrado, un circulo o un triangulo creamos un nuevo atributo: 
 `herramientaActual`.
 ````java
-public class editor.Editor {
+public class Editor {
 
     // Creamos un nuevo atributo para saber cual es la herramienta actual que estamos utilizando
     private String herramientaActual;
@@ -277,7 +279,7 @@ public class editor.Editor {
 Además, necesitaremos tambien unos atributos auxiliares para crear el cuadrado, el circulo y el triangulo: para saber 
 donde se pincho la primera vez:
 ````java
-public class editor.Editor {
+public class Editor {
 
     // Creamos un nuevo atributo para saber cual es la herramienta actual que estamos utilizando
     private String herramientaActual;
@@ -294,7 +296,7 @@ public class editor.Editor {
 
 Y con todo esto ya podremos crearlos:
 ````java
-public class editor.Editor {
+public class Editor {
 
   //...
 
@@ -360,7 +362,7 @@ Ahora solo necesitamos completar algunas cosas: como el mover y el soltar siendo
 <summary>editor.Editor</summary>
 
 ````java
-public class editor.Editor {
+public class Editor {
 
     // Creamos un nuevo atributo para saber cual es la herramienta actual que estamos utilizando
     private String herramientaActual = "seleccion";
@@ -376,7 +378,7 @@ public class editor.Editor {
     private int xRef;
     private int yRef;
 
-    public editor.Editor() {
+    public Editor() {
         setDibujo(new Dibujo());
     }
 
@@ -642,7 +644,7 @@ public class HerramientaSeleccion implements Herramienta {
 
 Con todo esto podemos dejar el ``editor.Editor`` de esta forma:
 ````java
-public class editor.Editor {
+public class Editor {
 
     // Creamos un nuevo atributo para saber cual es la herramienta actual que estamos utilizando
     private String herramientaActual = "seleccion";
@@ -656,7 +658,7 @@ public class editor.Editor {
     private int xRef;
     private int yRef;
 
-    public editor.Editor() {
+    public Editor() {
         setDibujo(new Dibujo());
     }
 
@@ -732,7 +734,7 @@ Además, para poder ver que funciona hemos tenido que añadir un nuevo atributo 
 la herramienta de selección. Esto lo hemos hecho porque, como nos dice en el enunciado, después de crear una herramienta
 deberemos de volver a la herramienta por defecto
 ```java
-public class editor.Editor {
+public class Editor {
 
     // Creamos un nuevo atributo para saber cual es la herramienta actual que estamos utilizando
     private String herramientaActual = "seleccion";
@@ -740,7 +742,7 @@ public class editor.Editor {
 
     //...
 
-    public editor.Editor() {
+    public Editor() {
         setDibujo(new Dibujo());
 
         herramientaDefecto = herramienta = new HerramientaSeleccion(this);

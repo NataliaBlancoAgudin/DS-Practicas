@@ -198,3 +198,18 @@ con un error 401 no autorizado.
 ---
 > Para esta ampliación no se ha añadido ninguna clase nueva, simplemente se ha usado las clases ya creadas.
 ---
+
+---
+## Patrón utilizado: Strategy
+### Participantes
+
+1) **Context** → `Server`  
+   Métodos:
+2) **Strategy** → `PaginaStrategy`  
+   Métodos:
+3) **ConcreteStrategy** → `PaginaInicio`, `PaginaMiCuenta`,...  
+   Métodos:
+
+## Patrón utilizado: Decorator
+
+## Patrón utilizado: Decorator

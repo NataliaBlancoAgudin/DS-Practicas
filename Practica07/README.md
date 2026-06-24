@@ -14,3 +14,7 @@ Se pide mejorar el diseño para que se puedan hacer 8 modificaciones cambiando s
 
 En esta práctica también se incluye el diagrama UML del código inicial
 ![Diagrama UML](diagrama.png)
+
+---
+## ✨ Solución
+> **Patrón Decorator**

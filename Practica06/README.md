@@ -16,3 +16,4 @@ Al igual que en otras clases se incluye el diagrama de clases del código inicia
 
 ---
 ## ✨ Solución
+> **Patrón Adapter**

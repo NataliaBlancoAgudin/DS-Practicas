@@ -17,3 +17,7 @@ Nos van a contratar para hacer aplicaciones similares en distintos programas de 
 
 El diagrama UML del código inicial es el siguiente:
 ![Diagrama UML](diagrama.png)
+
+---
+## ✨ Solución
+> **Patrón Observer**
